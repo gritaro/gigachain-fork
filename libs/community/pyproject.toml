@@ -33,22 +33,22 @@ ignore-words-list = "momento,collison,ned,foor,reworkd,parth,whats,aapply,mysogy
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4.0"
-gigachain-core = "^0.2.38post2"
-gigachain = "^0.2.16"
+gigachain-core = { path = "../core" }
+gigachain = { path = "../langchain" }
 SQLAlchemy = ">=1.4,<3"
 requests = "^2"
 PyYAML = ">=5.3"
 aiohttp = "^3.8.3"
 tenacity = "^8.1.0,!=8.4.0"
 dataclasses-json = ">= 0.5.7, < 0.7"
-langsmith = "^0.1.112"
+langsmith = ">=0.0.87"
 gigachat = ">=0.1.35"
 [[tool.poetry.dependencies.numpy]]
-version = "^1"
+version = ">=1"
 python = "<3.12"
 
 [[tool.poetry.dependencies.numpy]]
-version = "^1.26.0"
+version = ">=1.26.0"
 python = ">=3.12"
 
 [tool.ruff.lint]
